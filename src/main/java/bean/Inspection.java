@@ -1,8 +1,7 @@
+package bean;
+
 import java.util.Date;
 
-/**
- * Created by doug on 10/21/17.
- */
 public class Inspection {
     private String camis;
     private String dba;

@@ -1,16 +1,19 @@
+import bean.Inspection;
+import service.InspectionService;
+
 import java.io.IOException;
 import java.text.DateFormat;
 import java.util.List;
 
 public class Main {
-    
+
     public static void main(String[] args) throws IOException {
         // load the inspection service
         InspectionService service = new InspectionService(Main.class.getResource("nyc_restaurant_inspections.json").getFile());
 
         // print report
-        printInspections(service.listInspections());
-
+        List<Inspection> inspections = service.listInspections();
+        printInspections(inspections);
     }
 
     public static void printInspections(List<Inspection> inspections){

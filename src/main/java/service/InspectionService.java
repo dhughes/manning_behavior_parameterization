@@ -1,3 +1,6 @@
+package service;
+
+import bean.Inspection;
 import com.google.gson.FieldNamingPolicy;
 import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
@@ -7,9 +10,7 @@ import java.io.IOException;
 import java.lang.reflect.Type;
 import java.nio.file.Files;
 import java.nio.file.Paths;
-import java.util.ArrayList;
 import java.util.List;
-import java.util.Objects;
 
 public class InspectionService {
     private List<Inspection> inspections;

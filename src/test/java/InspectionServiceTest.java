@@ -1,4 +1,6 @@
+import bean.Inspection;
 import org.junit.Test;
+import service.InspectionService;
 
 import java.io.IOException;
 import java.util.List;
